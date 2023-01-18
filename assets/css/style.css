@@ -22,7 +22,7 @@ img{
  width: auto; 
  height: auto; 
  z-index: -1000;
- opacity: 0.5;
+ opacity: 0.1;
  object-fit: cover;
  object-position: center;
 }
@@ -49,6 +49,11 @@ img{
     color: white;
     font-weight: bold;
     text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+.menu .navigator ul a:hover{
+    background-color: #D5011D;
 }
 .content{
     display: flex;
@@ -79,6 +84,10 @@ img{
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color .3s ease;
+}
+.content .text input:hover{
+    background-color: #131313;
 }
 @media (max-width:1201px){
     .menu{
